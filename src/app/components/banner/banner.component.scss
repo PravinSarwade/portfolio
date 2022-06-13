@@ -1,0 +1,85 @@
+@import './../../../styles.scss';
+
+.bg {
+    height: 85vh;
+    width: 100%;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 24px 3px rgb(64 45 236 / 20%);
+
+
+    @media (max-width:480px) {
+        height: 64vh;
+    }
+}
+
+.content {
+    width: 75%;
+    margin: auto;
+
+    @media (max-width:480px) {
+        width: 85%;
+    }
+}
+
+.name h1 {
+    color: $lines-color;
+    font-size: 40px;
+    font-weight: 700;
+
+    @media (max-width:480px) {
+        font-size: 28px;
+    }
+}
+
+.name p {
+    color: $lines-color;
+}
+
+.portfolio-btn {
+    padding: 12px 27px;
+    border: none;
+    background-color: #f64639;
+    font-size: 15px;
+    color: white;
+    border-radius: 25px;
+    font-weight: 400;
+    margin: 10px;
+    margin-left: 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.portfolio-btn:focus{
+    outline: 0 !important;
+}
+
+.portfolio-btn:hover {
+    background-color: $primary-color;
+    box-shadow: 1px 1px 15px 3px rgba(0, 0, 0, .3);
+
+}
+
+.hire-me-btn {
+    padding: 12px 27px;
+    border: 1px solid white;
+    background-color: transparent;
+    font-size: 15px;
+    color: white;
+    border-radius: 25px;
+    font-weight: 400;
+    margin: 10px;
+    margin-left: 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.hire-me-btn:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 1px 1px 15px 3px rgba(0, 0, 0, .3);
+
+}
