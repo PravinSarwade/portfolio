@@ -38,7 +38,9 @@
 .name p {
     color: $lines-color;
 }
-
+.btns{
+    display: flex;
+}
 .portfolio-btn {
     padding: 12px 27px;
     border: none;
@@ -51,9 +53,46 @@
     margin-left: 0;
     cursor: pointer;
     transition: .5s;
+    display: flex;
+    align-items: center;
+    .text{
+        padding-left: 8px;
+    }
+    .block{
+        display: grid;
+        grid-template-columns: 12px 12px;
+        grid-row-gap: 2px;
+        width: 24px;
+        transition: .9s;
+        .spans{
+            transition: .5s;
+            height: 10px;
+            width: 10px;
+            border: 1px solid white;
+        }
+
+    }
+    &:hover{
+        .spans{
+            transform: rotate(45deg);
+        }
+        .block{
+           animation: rotata .5s .5s 1;
+        }
+    }
 }
 
-.portfolio-btn:focus{
+@keyframes rotata {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(720deg);
+    }
+}
+
+
+.portfolio-btn:focus {
     outline: 0 !important;
 }
 
